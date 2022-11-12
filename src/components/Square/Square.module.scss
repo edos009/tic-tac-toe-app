@@ -1,0 +1,26 @@
+@import "../../styles/template";
+@import "../../styles/variables";
+
+.square {
+  width: 100px;
+  height: 100px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid $color-black;
+
+  background-color: $color-white;
+
+  cursor: pointer;
+  outline: none;
+
+  font-size: 60px;
+}
+
+.square:hover {
+  background-color: $color-light-grey;
+
+  font-size: 62px;
+}

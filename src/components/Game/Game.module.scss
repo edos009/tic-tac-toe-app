@@ -1,0 +1,16 @@
+@import "../../styles/template";
+@import "../../styles/variables";
+
+.game {
+  .wrapper {
+    min-height: 100vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: $color-black;
+  }
+}

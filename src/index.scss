@@ -1,4 +1,5 @@
 @import "./reset.scss";
+@import "./styles/variables";
 
 *,
 *::after,
@@ -14,7 +15,7 @@ body{
   font-size: 14px;
   line-height: 1.2em;
 
-  color: #222;
+  color: $color-black;
 }
 
 ul{
