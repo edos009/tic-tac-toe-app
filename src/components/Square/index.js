@@ -2,10 +2,10 @@ import React from 'react';
 
 import styles from './Square.module.scss'
 
-const Square = () => {
+const Square = ({click, value}) => {
   return (
-    <button className={styles.square}>
-      X
+    <button className={styles.square} onClick={click}>
+      {value}
     </button>
   );
 }

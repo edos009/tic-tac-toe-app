@@ -2,6 +2,48 @@
 @import "../../styles/variables";
 
 .game {
+  .box_score {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 40px;
+
+    .btn_reset_score {
+      padding: 5px;
+    }
+  }
+  .new_game,
+  .btn_reset_score {
+    border: 2px solid $color-white;
+    border-radius: 3px;
+
+    color: $color-white;
+    background-color: $color-black;
+
+    cursor: pointer;
+    outline: none;
+
+    transition: 0.3s all ease;
+
+    font-family: "Sono", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+
+    &:hover {
+      color: $color-black;
+      background-color: $color-white;
+    }
+  }
+
+  .new_game {
+    width: 170px;
+
+    padding: 10px;
+    margin-top: 20px;
+  }
+
   .wrapper {
     min-height: 100vh;
     width: 100%;
@@ -12,5 +54,28 @@
     align-items: center;
 
     background: $color-black;
+  }
+
+  .text,
+  .score_text,
+  .score_title {
+    color: $color-white;
+
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: capitalize;
+  }
+
+  .text {
+    margin-top: 20px;
+  }
+
+  .score_title {
+    margin-bottom: 10px;
+
+    font-weight: 700;
+    font-size: 30px;
+    text-decoration: underline;
+    text-transform: uppercase;
   }
 }

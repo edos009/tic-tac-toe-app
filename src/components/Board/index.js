@@ -1,22 +1,16 @@
-import React from 'react';
-import Square from '../Square';
+import React from "react";
+import Square from "../Square";
 
-import styles from './Board.module.scss'
+import styles from "./Board.module.scss";
 
-const Board = () => {
+const Board = ({ board, xIsNext, click }) => {
   return (
     <div className={styles.board}>
-      <Square/>
-      <Square/>
-      <Square/>
-      <Square/>
-      <Square/>
-      <Square/>
-      <Square/>
-      <Square/>
-      <Square/>
+      {board.map((elem, index) => (
+        <Square key={index} value={elem} click={() => click(index)}/>
+      ))}
     </div>
   );
-}
+};
 
 export default Board;
